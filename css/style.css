@@ -66,7 +66,7 @@ html {
 /* footer */
 
 footer {
-    height: 50px;
+    height: 100%;
     background-color: #dcdcdc;
     margin-top: 10px;
 }
@@ -115,6 +115,10 @@ footer {
 /* mobile footer */
 
 @media screen and (max-width: 376px) {
+    footer {
+        height: 80px;
+    }
+
 
     .redes_container {
         display: flex;
@@ -186,6 +190,7 @@ footer {
 
     .alquileres_cargarMas_container {
         margin-top: 25px;
+        font-size: 12px;
     }
 
 }
@@ -194,6 +199,7 @@ footer {
 
 .main_ventas_container {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-evenly;
     align-content: center;
     align-items: center;
@@ -201,8 +207,8 @@ footer {
 }
 
 .img_ventas_container {
-    width: 200px;
-    height: 300px;
+    width: 300px;
+    height: 400px;
     margin: 25px;
 }
 
@@ -226,24 +232,21 @@ footer {
 
 /* mobile ventas */
 
-@media screen and (max-width: 376px) {
-    .img_ventas_container {
-        height: 400px;
+@media screen and (max-width: 375px) {
 
+    .img_ventas_container {
+        margin: 10px;
+        text-align: center;
+        
     }
 
     .img_ventas_container p {
-        text-align: center;
-        width: 90px;
+        width: 190px;
+
     }
 
     .img_ventas_container h2 {
         font-size: 10px;
-    }
-
-    .img_ventas_container {
-        margin: 10px;
-
     }
 
     .ventas_cargarMas_container {
