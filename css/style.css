@@ -35,6 +35,23 @@ html {
     margin-top: 50px;
 }
 
+/* main */
+
+.destacados_container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+.destacados_1 {
+    margin: 10px;
+}
+
+.destacados_container img {
+    width: 400px;
+    
+}
 
 /* footer */
 
