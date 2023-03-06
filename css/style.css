@@ -255,3 +255,73 @@ footer {
     }
 
 }
+
+/* page servicios */
+
+.servicios_container {
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+
+.nuestros_servicios {
+    text-align: center;
+    margin-top: 80px;
+    width: 290px;
+    height: 230px;
+    background-color: #dcdcdc;
+    opacity: 0.5;
+    padding: 30px;
+    
+}
+
+.nuestros_servicios h2 {
+    font-style: italic;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.nuestros_servicios p {
+    font-style: italic;
+    margin-top: 10px;
+    font-size: 12px;
+}
+
+.servicios_container img {
+    height: 300px;
+    margin-top: 50px;
+
+}
+
+.servicios_container_detalle {
+    text-align: left;
+    margin-left: 50px;
+    margin-top: 80px;
+    margin-bottom: 40px;
+}
+
+/* mobile servicios */
+
+@media screen and (max-width: 376px) {
+    .servicios_container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .servicios_container img {
+        height: 190px;
+        margin-top: 20px;
+    }
+    .nuestros_servicios {
+        margin-top: 20px;
+    }
+
+    .servicios_container_detalle {
+        text-align: center;
+        margin-left: 0px;
+        margin-top: 30px;
+        margin-bottom: 20px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
