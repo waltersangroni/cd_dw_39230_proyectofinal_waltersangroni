@@ -300,6 +300,12 @@ footer {
     margin-bottom: 40px;
 }
 
+.servicios_container_detalle p {
+    width: 500px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
 /* mobile servicios */
 
 @media screen and (max-width: 376px) {
@@ -317,11 +323,15 @@ footer {
     }
 
     .servicios_container_detalle {
-        text-align: center;
+        text-align: left;
         margin-left: 0px;
         margin-top: 30px;
         margin-bottom: 20px;
         padding-left: 20px;
         padding-right: 20px;
+    }
+
+    .servicios_container_detalle p {
+        width: 250px;
     }
 }
