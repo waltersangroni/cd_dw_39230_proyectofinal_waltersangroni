@@ -1,0 +1,31 @@
+.main_alquileres_container {
+    display: flex;
+    justify-content: space-evenly;
+    align-content: center;
+    align-items: center;
+
+    .img_alq_container {
+        width: 200px;
+        height: 400px;
+        margin: 25px;
+
+        h2 {
+            font-size: 13px;
+            text-align: center;
+            margin-top: 13px;
+            margin-bottom: 30px;
+        }
+
+        p {
+            text-align: center;
+        }
+    }
+
+}
+
+.alquileres_cargarMas_container {
+    text-align: center;
+    font-size: 15px;
+    font-weight: bold;
+}
+

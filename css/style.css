@@ -1,179 +1,137 @@
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 html {
-    font-size: 62.5%;
+  font-size: 62.5%;
 }
-
-/* header */
 
 .body_container {
-    width: 100%;
-    height: 100%;
+  width: 100%;
+  height: 100%;
 }
-
-
-.logo_anton img {
-    width: 120px;
-    height: 80px;
-    margin: 10px;
-  
+.body_container .logo_anton img {
+  width: 120px;
+  height: 80px;
+  margin: 10px;
 }
 
 .nav_link_container {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;    
-    
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.nav_link_container .link {
+  width: 160px;
+  font-size: 1.8rem;
+  margin-top: 50px;
 }
 
-.link {
-    width: 160px;
-    font-size: 1.8rem;
-    margin-top: 50px;
+.destacados_container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
-
-
-/* footer */
+.destacados_container img {
+  width: 400px;
+}
+.destacados_container .destacados_1 {
+  margin: 10px;
+}
+.destacados_container .destacados_1 h2 {
+  font-size: 15px;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 5px;
+}
 
 footer {
-    height: 50px;
-    background-color: #dcdcdc;
+  background-color: #dcdcdc;
+  height: 100%;
+  margin-top: 10px;
+}
+footer .footer_container {
+  display: flex;
+  justify-content: space-between;
+}
+footer .redes_container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+footer .redes_container li {
+  list-style-type: none;
+  margin-right: 20px;
+}
+footer .redes_container img {
+  height: 2.5rem;
+  width: 2.5rem;
+  margin-top: 15px;
+}
+footer .copy_container {
+  width: 130px;
+  text-align: right;
+  margin-top: 15px;
+  margin-right: 10px;
+}
+footer .copy_container .copy_container p {
+  font-size: 1rem;
+  position: relative;
 }
 
-.footer_container {
+@media screen and (max-width: 376px) {
+  footer {
+    height: 60px;
+  }
+  .redes_container {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
+  }
+  .redes_container li {
+    margin-right: 2px;
+  }
+  .redes_container a {
+    padding-left: 15px;
+  }
 }
-
-.redes_container {
-     display: flex;
-     justify-content: space-around;
-     align-items: center;
-     
-     
+footer {
+  background-color: #dcdcdc;
 }
-
-.redes_container li {
-    list-style-type: none;
-    margin-right: 20px;
-    
-}
-
-.redes_container li a img {
-   height: 2rem;
-   width: 2rem;
-   margin-top: 10px;
-   
-}
-
-
-.copy_container {
-    text-align: right;
-    margin-top: 15px;
-    margin-right: 10px;
-
-}
-
-.copy_container p {
-    font-size: 1rem;
-    position: relative;
-    
-    
-}
-
-/* mobile footer */
-
-@media screen and (max-width: 375px) {
-    .copy_container p {
-            display: none;
-    }
-
-    .redes_container {
-            display: flex;
-            justify-content: flex-start;
-
-    }
-
-    .redes_container li {
-        margin-right: 2px;
-    }
-
-    .redes_container li a {
-            padding-left: 15px;
-
-    }
-    
-}
-
-/* Pages alquileres */
 
 .main_alquileres_container {
-    display: flex;
-    justify-content: center;
-    align-content: space-around;
-    margin: 1rem;
-
+  display: flex;
+  justify-content: space-evenly;
+  align-content: center;
+  align-items: center;
 }
-
-.main_alquileres_container_img img {
-    margin: 2rem;
-
+.main_alquileres_container .img_alq_container {
+  width: 200px;
+  height: 400px;
+  margin: 25px;
 }
-
-.img_galeria {
-    height: 300px;
+.main_alquileres_container .img_alq_container h2 {
+  font-size: 13px;
+  text-align: center;
+  margin-top: 13px;
+  margin-bottom: 30px;
 }
-
-.alquileres_h2_container {
-    display: block;
-    text-align: center;
-}
-
-.alquileres_h2_container h2 {
-    font-size: 1.5rem;
-}
-
-.alquileres_p_container {
-    display: block;
-    width: 35rem;
-    text-align: center;
-    margin: 1.5rem;
-
-}
-
-.alquileres_p_container p {
-    text-align: center;
-    margin-left: 50px;
-    width: 23rem;
+.main_alquileres_container .img_alq_container p {
+  text-align: center;
 }
 
 .alquileres_cargarMas_container {
-    display: block;
-    text-align: center;
+  text-align: center;
+  font-size: 15px;
+  font-weight: bold;
 }
 
-.alquileres_cargarMas_container p {
-    font-size: 1.3rem;
-    font-weight: bold;
+footer {
+  background-color: #dcdcdc;
 }
 
-/* vista mobile pages alquileres */
-
-@media screen and (max-width: 376px) {
-    .main_alquileres_container {
-        flex-direction: column;
-        
-    }
-
-    .alquileres_p_container {
-        width: 25rem;
-    }
-
+footer {
+  background-color: #dcdcdc;
 }
 
-
-/* pages servicios */
-
+/*# sourceMappingURL=style.css.map */
