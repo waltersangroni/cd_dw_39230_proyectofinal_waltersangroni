@@ -1,3 +1,4 @@
+
 .main_alquileres_container {
     display: flex;
     justify-content: space-evenly;
@@ -6,11 +7,11 @@
 
     .img_alq_container {
         width: 200px;
-        height: 400px;
+        height: 430px;
         margin: 25px;
 
         h2 {
-            font-size: 13px;
+            font-size: 10px;
             text-align: center;
             margin-top: 13px;
             margin-bottom: 30px;
@@ -18,14 +19,32 @@
 
         p {
             text-align: center;
+            font-size: 10px;
+            
         }
+
     }
 
 }
 
 .alquileres_cargarMas_container {
-    text-align: center;
-    font-size: 15px;
-    font-weight: bold;
+    h3 {
+        text-align: center;
+        font-size: 13px;
+        font-weight: bold;
+    }
+
 }
+
+@media screen and (max-width: 376px) {
+    .alquileres_cargarMas_container {
+        h3 {
+            margin-top: 30px;
+            font-size: 10px;
+        }
+        
+    }
+}
+
+
 
