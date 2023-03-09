@@ -1,7 +1,56 @@
-@use "variables";
+// main
 
-// footer
+.main_ventas_container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
 
-footer {
-    background-color: variables.$background_color;
+    .img_ventas_container {
+        width: 290px;
+        height: 300px;
+        margin: 25px;
+
+        h2 {
+            font-size: 13px;
+            text-align: center;
+            margin-top: 13px;
+            margin-bottom: 20px;
+        }
+
+        p {
+            text-align: center;
+        }
+    }
+   
+}
+
+.ventas_cargarMas_container {
+    text-align: center;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+// mobile ventas
+
+@media screen and (max-width: 376px) {
+
+    .main_ventas_container {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+        margin-left: 20px;
+        
+    }
+
+}
+
+.img_ventas_container {
+    margin: 10px;
+    text-align: center;
+
+    p {
+        width: 190px;
+        margin-left: 50px;
+    }
+
 }
