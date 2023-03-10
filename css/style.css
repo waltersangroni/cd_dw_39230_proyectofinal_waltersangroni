@@ -1,337 +1,279 @@
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 html {
-    font-size: 62.5%;
+  font-size: 62.5%;
 }
-
-/* header */
 
 .body_container {
-    width: 100%;
-    height: 100%;
+  width: 100%;
+  height: 100%;
 }
-
-
-.logo_anton img {
-    width: 120px;
-    height: 80px;
-    margin: 10px;
-
+.body_container .logo_anton img {
+  width: 120px;
+  height: 80px;
+  margin: 10px;
 }
 
 .nav_link_container {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
-
-.link {
-    width: 160px;
-    font-size: 1.8rem;
-    margin-top: 50px;
+.nav_link_container .link {
+  width: 160px;
+  font-size: 1.8rem;
+  margin-top: 50px;
 }
-
-/* main */
 
 .destacados_container {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
-
-.destacados_1 {
-    margin: 10px;
-}
-
-.destacados_1 h2 {
-    font-size: 15px;
-    font-weight: bold;
-    text-align: center;
-    margin-top: 5px;
-}
-
-
 .destacados_container img {
-    width: 400px;
-
+  width: 400px;
 }
-
-
-
-/* footer */
+.destacados_container .destacados_1 {
+  margin: 10px;
+}
+.destacados_container .destacados_1 h2 {
+  font-size: 15px;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 5px;
+}
 
 footer {
-    height: 100%;
-    background-color: #dcdcdc;
-    margin-top: 10px;
+  background-color: #dcdcdc;
+  height: 100%;
+  margin-top: 10px;
 }
-
-.footer_container {
-    display: flex;
-    justify-content: space-between;
+footer .footer_container {
+  display: flex;
+  justify-content: space-between;
 }
-
-.redes_container {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-
+footer .redes_container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
-
-.redes_container li {
-    list-style-type: none;
-    margin-right: 20px;
-
+footer .redes_container li {
+  list-style-type: none;
+  margin-right: 20px;
 }
-
-.redes_container li a img {
-    height: 2.5rem;
-    width: 2.5rem;
-    margin-top: 15px;
-
+footer .redes_container img {
+  height: 2.5rem;
+  width: 2.5rem;
+  margin-top: 15px;
 }
-
-
-.copy_container {
-    width: 130px;
-    text-align: right;
-    margin-top: 15px;
-    margin-right: 10px;
-
+footer .copy_container {
+  width: 130px;
+  text-align: right;
+  margin-top: 15px;
+  margin-right: 10px;
 }
-
-.copy_container p {
-    font-size: 1rem;
-    position: relative;
-
-
+footer .copy_container .copy_container p {
+  font-size: 1rem;
+  position: relative;
 }
-
-/* mobile footer */
 
 @media screen and (max-width: 376px) {
-    footer {
-        height: 80px;
-    }
-
-
-    .redes_container {
-        display: flex;
-        justify-content: flex-start;
-
-    }
-
-    .redes_container li {
-        margin-right: 2px;
-    }
-
-    .redes_container li a {
-        padding-left: 15px;
-
-    }
-
-}
-
-/* Pages alquileres */
-
-.main_alquileres_container {
+  footer {
+    height: 60px;
+  }
+  .redes_container {
     display: flex;
-    justify-content: space-evenly;
-    align-content: center;
-    align-items: center;
-
+    justify-content: flex-start;
+  }
+  .redes_container li {
+    margin-right: 2px;
+  }
+  .redes_container a {
+    padding-left: 15px;
+  }
 }
-
-.img_alq_container {
-    width: 200px;
-    height: 400px;
-    margin: 25px;
-}
-
-.img_alq_container h2 {
-    font-size: 13px;
-    text-align: center;
-    margin-top: 13px;
-    margin-bottom: 30px;
-}
-
-.img_alq_container p {
-    text-align: center;
-
-}
-
-.alquileres_cargarMas_container {
-    text-align: center;
-    font-size: 15px;
-    font-weight: bold;
-}
-
-/* mobile alquileres */
-
-@media screen and (max-width: 376px) {
-    .img_alq_container p {
-        text-align: center;
-        width: 90px;
-    }
-
-    .img_alq_container h2 {
-        font-size: 10px;
-    }
-
-    .img_alq_container {
-        margin: 10px;
-
-    }
-
-    .alquileres_cargarMas_container {
-        margin-top: 25px;
-        font-size: 12px;
-    }
-
-}
-
-/* pages ventas */
-
 .main_ventas_container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    align-content: center;
-    align-items: center;
-
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
 }
-
-.img_ventas_container {
-    width: 300px;
-    height: 400px;
-    margin: 25px;
+.main_ventas_container .img_ventas_container {
+  width: 290px;
+  height: 300px;
+  margin: 25px;
 }
-
-.img_ventas_container h2 {
-    font-size: 13px;
-    text-align: center;
-    margin-top: 13px;
-    margin-bottom: 30px;
+.main_ventas_container .img_ventas_container h2 {
+  font-size: 13px;
+  text-align: center;
+  margin-top: 13px;
+  margin-bottom: 20px;
 }
-
-.img_ventas_container p {
-    text-align: center;
-
+.main_ventas_container .img_ventas_container p {
+  text-align: center;
 }
 
 .ventas_cargarMas_container {
-    text-align: center;
-    font-size: 15px;
-    font-weight: bold;
+  text-align: center;
+  font-size: 13px;
+  font-weight: bold;
 }
 
-/* mobile ventas */
-
-@media screen and (max-width: 375px) {
-
-    .img_ventas_container {
-        margin: 10px;
-        text-align: center;
-        
-    }
-
-    .img_ventas_container p {
-        width: 190px;
-
-    }
-
-    .img_ventas_container h2 {
-        font-size: 10px;
-    }
-
-    .ventas_cargarMas_container {
-        font-size: 12px;
-
-    }
-
+@media screen and (max-width: 376px) {
+  .main_ventas_container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    margin-left: 20px;
+  }
+}
+.img_ventas_container {
+  margin: 10px;
+  text-align: center;
+}
+.img_ventas_container p {
+  width: 190px;
+  margin-left: 50px;
 }
 
-/* page servicios */
+.main_alquileres_container {
+  display: flex;
+  justify-content: space-evenly;
+  align-content: center;
+  align-items: center;
+}
+.main_alquileres_container .img_alq_container {
+  width: 200px;
+  height: 430px;
+  margin: 25px;
+}
+.main_alquileres_container .img_alq_container h2 {
+  font-size: 10px;
+  text-align: center;
+  margin-top: 13px;
+  margin-bottom: 30px;
+}
+.main_alquileres_container .img_alq_container p {
+  text-align: center;
+  font-size: 10px;
+}
 
+.alquileres_cargarMas_container {
+  text-align: center;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 376px) {
+  .alquileres_cargarMas_container {
+    margin-top: 30px;
+    font-size: 10px;
+  }
+}
 .servicios_container {
-    display: flex;
-    justify-content: space-evenly;
-    
+  display: flex;
+  justify-content: space-evenly;
 }
-
-.nuestros_servicios {
-    text-align: center;
-    margin-top: 80px;
-    width: 290px;
-    height: 230px;
-    background-color: #dcdcdc;
-    opacity: 0.5;
-    padding: 30px;
-    
-}
-
-.nuestros_servicios h2 {
-    font-style: italic;
-    font-size: 25px;
-    font-weight: bold;
-}
-
-.nuestros_servicios p {
-    font-style: italic;
-    margin-top: 10px;
-    font-size: 12px;
-}
-
 .servicios_container img {
-    height: 300px;
-    margin-top: 50px;
-
+  height: 300px;
+  margin-top: 50px;
+}
+.servicios_container .nuestros_servicios {
+  text-align: center;
+  margin-top: 80px;
+  width: 290px;
+  height: 230px;
+  background-color: #dcdcdc;
+  opacity: 0.7;
+  padding: 30px;
+}
+.servicios_container .nuestros_servicios h2 {
+  font-style: italic;
+  font-size: 25px;
+  font-weight: bold;
+}
+.servicios_container .nuestros_servicios p {
+  font-style: italic;
+  margin-top: 10px;
+  font-size: 12px;
 }
 
 .servicios_container_detalle {
-    text-align: left;
-    margin-left: 50px;
-    margin-top: 80px;
-    margin-bottom: 40px;
+  text-align: left;
+  margin-left: 50px;
+  margin-top: 80px;
+  margin-bottom: 40px;
 }
-
 .servicios_container_detalle p {
-    width: 500px;
-    margin-top: 20px;
-    margin-bottom: 20px;
+  width: 500px;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
-
-/* mobile servicios */
 
 @media screen and (max-width: 376px) {
-    .servicios_container {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .servicios_container img {
-        height: 190px;
-        margin-top: 20px;
-    }
-    .nuestros_servicios {
-        margin-top: 20px;
-    }
-
-    .servicios_container_detalle {
-        text-align: left;
-        margin-left: 0px;
-        margin-top: 30px;
-        margin-bottom: 20px;
-        padding-left: 20px;
-        padding-right: 20px;
-    }
-
-    .servicios_container_detalle p {
-        width: 250px;
-    }
+  .servicios_container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .nuestros_servicios {
+    margin-top: 30px;
+  }
+  img {
+    height: 190px;
+    width: 350px;
+  }
+  .servicios_container_detalle {
+    text-align: left;
+    margin-left: 0px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .servicios_container_detalle p {
+    width: 250px;
+  }
 }
+.main_container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 600px;
+  width: 980px;
+}
+.main_container .form_container {
+  display: flex;
+  flex-direction: column;
+}
+.main_container label {
+  height: 30px;
+  font-size: 15px;
+}
+.main_container input {
+  margin-bottom: 15px;
+}
+.main_container select {
+  margin-bottom: 20px;
+}
+.main_container iframe {
+  height: 400px;
+  width: 400px;
+}
+
+@media screen and (max-width: 376px) {
+  .main_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 1000px;
+    width: 374px;
+  }
+  .main_container iframe {
+    height: 400px;
+    width: 350px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
