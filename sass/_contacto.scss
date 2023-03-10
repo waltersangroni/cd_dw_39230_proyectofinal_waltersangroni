@@ -1,7 +1,47 @@
-@use "variables";
+// main contacto
 
-// footer
+.main_container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 600px;
+    width: 980px;
 
-footer {
-    background-color: variables.$background_color;
+    .form_container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    label {
+        height: 30px;
+        font-size: 15px;
+    }
+
+    input {
+        margin-bottom: 15px;
+    }
+
+    select {
+        margin-bottom: 20px;
+    }
+
+    iframe {
+        height: 400px;
+        width: 400px;
+    }
+}
+
+@media screen and (max-width: 376px) {
+    .main_container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 1000px;
+        width: 374px;
+
+        iframe {
+            height: 400px;
+            width: 350px;
+        }
+    }
 }
