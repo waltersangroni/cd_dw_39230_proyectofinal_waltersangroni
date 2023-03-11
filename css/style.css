@@ -33,9 +33,6 @@ html {
   justify-content: space-around;
   align-items: center;
 }
-.destacados_container img {
-  width: 400px;
-}
 .destacados_container .destacados_1 {
   margin: 10px;
 }
@@ -145,9 +142,9 @@ footer .copy_container .copy_container p {
   align-items: center;
 }
 .main_alquileres_container .img_alq_container {
+  margin: 25px;
   width: 200px;
   height: 430px;
-  margin: 25px;
 }
 .main_alquileres_container .img_alq_container h2 {
   font-size: 10px;
@@ -177,6 +174,7 @@ footer .copy_container .copy_container p {
   justify-content: space-evenly;
 }
 .servicios_container img {
+  width: 500px;
   height: 300px;
   margin-top: 50px;
 }
@@ -217,12 +215,17 @@ footer .copy_container .copy_container p {
     flex-direction: column;
     align-items: center;
   }
-  .nuestros_servicios {
-    margin-top: 30px;
-  }
-  img {
-    height: 190px;
+  .servicios_container img {
     width: 350px;
+    height: 240px;
+    margin-top: 20px;
+  }
+  .servicios_container .nuestros_servicios {
+    margin-top: 25px;
+    width: 300px;
+    height: 170px;
+    opacity: 0.5;
+    padding: 20px;
   }
   .servicios_container_detalle {
     text-align: left;
@@ -240,8 +243,8 @@ footer .copy_container .copy_container p {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  height: 600px;
   width: 980px;
+  height: 600px;
 }
 .main_container .form_container {
   display: flex;
@@ -258,8 +261,8 @@ footer .copy_container .copy_container p {
   margin-bottom: 20px;
 }
 .main_container iframe {
-  height: 400px;
   width: 400px;
+  height: 400px;
 }
 
 @media screen and (max-width: 376px) {
@@ -267,12 +270,12 @@ footer .copy_container .copy_container p {
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 1000px;
     width: 374px;
+    height: 1000px;
   }
   .main_container iframe {
-    height: 400px;
     width: 350px;
+    height: 400px;
   }
 }
 

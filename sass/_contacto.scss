@@ -1,11 +1,15 @@
 // main contacto
 
+@mixin tamanos ($ancho, $alto) {
+    width: $ancho;
+    height: $alto;
+}
+
 .main_container {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    height: 600px;
-    width: 980px;
+    @include tamanos(980px, 600px);
 
     .form_container {
         display: flex;
@@ -26,8 +30,8 @@
     }
 
     iframe {
-        height: 400px;
-        width: 400px;
+        @include tamanos(400px, 400px);
+
     }
 }
 
@@ -36,12 +40,11 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        height: 1000px;
-        width: 374px;
+        @include tamanos(374px, 1000px);
 
         iframe {
-            height: 400px;
-            width: 350px;
+            @include tamanos(350px, 400px);
+
         }
     }
 }

@@ -1,11 +1,16 @@
 // main
 
+@mixin tamanos ($ancho, $alto) {
+    width: $ancho;
+    height: $alto;
+}
+
 .servicios_container {
     display: flex;
     justify-content: space-evenly;
 
     img {
-        height: 300px;
+        @include tamanos (500px, 300px);
         margin-top: 50px;
     }
 
@@ -53,19 +58,23 @@
     .servicios_container {
         flex-direction: column;
         align-items: center;
+
+        img {
+            @include tamanos(350px, 240px);
+            margin-top: 20px;
+        }
+
+        .nuestros_servicios {
+            margin-top: 25px;
+            @include tamanos(300px, 170px);
+            opacity: 0.5;
+            padding: 20px;
+           
+        }
         
     }
 
-    .nuestros_servicios {
-        margin-top: 30px;
-       
-    }
 
-    img {
-        height: 190px;
-        width: 350px;
-        
-    }
 
     .servicios_container_detalle {
         text-align: left;

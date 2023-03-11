@@ -1,4 +1,8 @@
 // main
+@mixin tamanos ($ancho, $alto) {
+    width: $ancho;
+    height: $alto;
+}
 
 .main_ventas_container {
     display: grid;
@@ -6,8 +10,7 @@
     grid-template-rows: 1fr 1fr;
 
     .img_ventas_container {
-        width: 290px;
-        height: 300px;
+        @include tamanos (290px, 300px);
         margin: 25px;
 
         h2 {
