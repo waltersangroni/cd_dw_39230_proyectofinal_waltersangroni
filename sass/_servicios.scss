@@ -19,7 +19,8 @@
         margin-top: 80px;
         width: 290px;
         height: 230px;
-        background-color: #dcdcdc;
+        background: rgb(240, 240, 240);
+        background: radial-gradient(circle, rgba(240, 240, 240, 1) 30%, rgba(255, 254, 132, 1) 83%);
         opacity: 0.7;
         padding: 30px;
     }
@@ -29,6 +30,7 @@
             font-style: italic;
             font-size: 25px;
             font-weight: bold;
+
         }
 
         p {
@@ -69,12 +71,10 @@
             @include tamanos(300px, 170px);
             opacity: 0.5;
             padding: 20px;
-           
+
         }
-        
+
     }
-
-
 
     .servicios_container_detalle {
         text-align: left;
@@ -90,4 +90,3 @@
     }
 
 }
-
