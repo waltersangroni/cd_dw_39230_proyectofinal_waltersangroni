@@ -35,6 +35,8 @@ html {
 }
 .destacados_container .destacados_1 {
   margin: 10px;
+  transition: 3s;
+  transform: scale(1, 1);
 }
 .destacados_container .destacados_1 h2 {
   font-size: 15px;
