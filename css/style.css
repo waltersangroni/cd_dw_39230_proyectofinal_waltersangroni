@@ -145,7 +145,7 @@ footer .copy_container .copy_container p {
 }
 .main_alquileres_container .img_alq_container {
   margin: 25px;
-  width: 200px;
+  width: 150px;
   height: 430px;
 }
 .main_alquileres_container .img_alq_container h2 {
@@ -166,6 +166,18 @@ footer .copy_container .copy_container p {
 }
 
 @media screen and (max-width: 376px) {
+  .main_alquileres_container {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .main_alquileres_container .img_alq_container {
+    height: 300px;
+  }
+  .main_alquileres_container .img_alq_container img {
+    width: 500px;
+    height: 100px;
+    margin: 0px;
+  }
   .alquileres_cargarMas_container {
     margin-top: 30px;
     font-size: 10px;

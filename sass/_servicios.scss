@@ -30,7 +30,6 @@
             font-style: italic;
             font-size: 25px;
             font-weight: bold;
-
         }
 
         p {
@@ -71,9 +70,7 @@
             @include tamanos(300px, 170px);
             opacity: 0.5;
             padding: 20px;
-
         }
-
     }
 
     .servicios_container_detalle {
@@ -88,5 +85,4 @@
             width: 250px;
         }
     }
-
 }
